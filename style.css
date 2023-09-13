@@ -1,0 +1,80 @@
+/* CSS Position Prop.
+? Static
+* default
+* positioned in realtion to elements
+* top, bottom, left, right, z-index hav No effect 
+? Relative
+* just like static
+* can be changed using top, right, left, bottom
+* shift top and right value in realtion to original positioning
+? Absolute
+* removes the element from the flow
+* positions it relative to parent container
+* if parent is, static it will move outside  of the parent container
+* if parent is relative, it will mover within the parent container
+* positioning defined by top, bottom, left, right, z-index
+? Fixed
+* Like absolute
+*positioned to viewport
+* doesn't move while scrolling
+* top, right, left, bottom,
+? Sticky
+* mix of relative and fixed
+* relative to the flow
+* position def. used for when you start scrolling
+* stay fixed when scrolling, relative in nature*/
+
+
+.parent-container {
+    background-color: beige;
+    border: 2px solid black;
+    width: 75vw;
+    height: 175vw;
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+
+/* position: relative; */
+}
+
+.child {
+    padding: 25px;
+}
+
+.child1 {
+    border: 2px solid red;
+    background-color: red;
+}
+
+.child2 {
+    border: 2px solid blueviolet;
+    background-color: blueviolet;
+    /* position: relative; */
+    right: 25px;
+    top: 25px;
+}
+
+.child3 {
+    border: 2px solid green;
+    background-color: green;
+
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+}
+
+.child4 {
+    border: 2px solid teal;
+    background-color: teal;
+
+    /* position: fixed; */
+    top: 0;
+
+}
+
+.child5 {
+    border: 2px solid gray;
+    background-color: gray;
+
+    position: sticky;
+    top: 0;
+}
